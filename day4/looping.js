@@ -37,4 +37,4 @@
     alert("product is added to cart successfully");
     document.body.style.background="red";
  }
- addToCart()
+ addToCart();
