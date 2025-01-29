@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2" collpadding="10px" collspacing="0px">
+        <thead>
+            <tr>
+                <th>S1.no</th>
+                <th>name</th>
+                <th>company</th>
+                <th>salary</th>
+                <th>city</th>
+                <th>area</th>
+            </tr>
+        </thead>
+        <tbody id="store">
+
+        </tbody>
+    </table>
+
+    <script>
+        let employee = [
+            {
+                empId:1,
+                empname:"Varun",
+                empCompany:"Google",
+                empSal:"45000",
+                empAddress:{
+                    empCity:"Hyd",
+                    empArea:"Nalgonda",
+                },
+            },
+        ];
+        employees.map(user=>{
+            let store = document.getElementById("store");
+            store.innerHTML +=
+            <tr>
+                <td>${user.empId}</td>
+                <td>${user.empName}</td>
+                <td>${user.empCompany}</td>
+                <td>${user.empSal}</td>
+                <td>${user.empAddress}</td>
+                <td>{user.empCity}</td>
+                <td>{user.empArea}</td>
+            </tr>
+        })
+    </script>
+</body>
+</html>
